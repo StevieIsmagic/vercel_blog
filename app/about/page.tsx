@@ -21,7 +21,7 @@ export default function AboutPage() {
         <p>
           I'm passionate about many creative pursuits, including music, writing, painting, and of course, thinking!
           This combination of interests is what ultimately led me to my current professional role writing software.
-          I've always felt a deep desire to have a seat at the roundtable of persons actively building the future.
+          I've always felt a deep desire participate in the process of building the future.
           And I feel honored to live in an age where the tools to positively impact a generation are readily at my fingertips.
           
         </p>
