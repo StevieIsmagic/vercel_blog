@@ -1,22 +1,21 @@
-import me from '../app/avatar.jpg';
+import me from '../app/placeholder.jpg';
 
-export const name = 'Lee Robinson';
+export const name = 'Stevie IsMagic';
 export const avatar = me;
 export const about = () => {
   return (
     <>
-      Hey, I'm Lee. I'm the <b>VP of Developer Experience at Vercel</b> where my
-      team helps developers build a faster web.
+      Welcome ~ I'm Stevie, a writer based in Miami, Florida.
+      I blog about a variety of topics including philosophy, longevity, and living a good life.
     </>
   );
 };
 export const bio = () => {
   return (
     <>
-      I'm a Next.js contributor and help lead our open-source communities. I'm
-      passionate about frontend development and have created courses on React,
-      Next.js, and web development. I'm an advisor and investor in early stage
-      startups.
+      When I'm not writing, I'm probably coding or building my second brain.
+      I enjoy playing guitar and exploring all kinds of musical experiences.
+      I also love contemplating new ideas through the works I read daily.
     </>
   );
 };

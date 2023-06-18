@@ -28,8 +28,8 @@ export async function generateMetadata({
     slug,
   } = post;
   const ogImage = image
-    ? `https://leerob.io${image}`
-    : `https://leerob.io/api/og?title=${title}`;
+    ? `https://stevieismagic.com${image}`
+    : `https://stevieismagic.com/api/og?title=${title}`;
 
   return {
     title,
@@ -39,7 +39,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `https://leerob.io/blog/${slug}`,
+      url: `https://stevieismagic.com/blog/${slug}`,
       images: [
         {
           url: ogImage,
@@ -77,7 +77,7 @@ export default async function Blog({ params }) {
           {post.publishedAt}
         </div>
         <div className="h-[0.2em] bg-neutral-50 dark:bg-neutral-800 mx-2" />
-        <ViewCounter slug={post.slug} trackView />
+        {/* <ViewCounter slug={post.slug} trackView /> */}
       </div>
       <Mdx code={post.body.code} tweets={tweets} />
     </section>

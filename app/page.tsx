@@ -12,14 +12,16 @@ import { name, about, bio, avatar } from 'lib/info';
 export const revalidate = 60;
 
 export default async function HomePage() {
-  let starCount, views, tweetCount;
+  let starCount, views, tweetCount =  [0, 0, 0];
 
   try {
-    [starCount, views, tweetCount] = await Promise.all([
-      getStarCount(),
-      getBlogViews(),
-      getTweetCount(),
-    ]);
+    // TODO - add api keys
+
+    // [starCount, views, tweetCount] = await Promise.all([
+    //   getStarCount(),
+    //   getBlogViews(),
+    //   getTweetCount(),
+    // ]);
   } catch (error) {
     console.error(error);
   }
@@ -43,24 +45,25 @@ export default async function HomePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/stevieismagic"
             className="flex items-center gap-2"
           >
             <TwitterIcon />
-            {`${tweetCount.toLocaleString()} tweets all time`}
+            {/* TODO - add twitter api key */}
+            {/* {`${tweetCount.toLocaleString()} tweets all time`}  */}
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/leerob"
+            href="https://github.com/stevieismagic"
             className="flex items-center gap-2"
           >
             <GitHubIcon />
-            {`${starCount.toLocaleString()} stars on this repo`}
+            {/* {`${starCount.toLocaleString()} stars on this repo`} */}
           </a>
           <Link href="/blog" className="flex items-center">
             <ViewsIcon />
-            {`${views.toLocaleString()} blog views all time`}
+            {/* {`${views.toLocaleString()} blog views all time`} */}
           </Link>
         </div>
       </div>
@@ -73,7 +76,7 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/stevieismagic"
           >
             <ArrowIcon />
             <p className="h-7">follow me on twitter</p>
@@ -84,7 +87,7 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://leerob.substack.com"
+            href="https://stevieismagic.substack.com"
           >
             <ArrowIcon />
             <p className="h-7">get email updates</p>

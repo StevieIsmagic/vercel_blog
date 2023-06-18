@@ -14,18 +14,18 @@ const kaisei = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Stevie IsMagic',
+    template: '%s | Stevie IsMagic',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Thinker, writer, and lover.',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    title: 'Stevie IsMagic',
+    description: 'Thinker, writer, and lover.',
+    url: 'https://stevieismagic.com',
+    siteName: 'Stevie IsMagic',
     images: [
       {
-        url: 'https://leerob.io/og.jpg',
+        url: 'https://stevieismagic.com/og.jpg', //TODO this image is a big L on the lefthand column of the landing page
         width: 1920,
         height: 1080,
       },
@@ -45,12 +45,14 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Stevie IsMagic',
     card: 'summary_large_image',
   },
   icons: {
+    //TODO - add favicon
     shortcut: '/favicon.ico',
   },
+  //TODO - add verification keys
   verification: {
     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
     yandex: '14d2e73487fa6c71',
