@@ -26,6 +26,7 @@ export default function AboutPage() {
           I most passionate about helping others learn and grow to their full potential - especially my mother and father. I literally owe them my life..
           
         </p>
+        <hr />
         <p>
           I'm currently working on a handful of projects that I'll <b>love</b> share with you soon enough.
           My most important one involves helping my parents actualize their life dreams.
