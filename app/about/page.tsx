@@ -33,8 +33,8 @@ export default function AboutPage() {
           Stay tuned for more details..
         </p>
         <p className="mb-8">
-          Outside of creative pursuits, I'm a aspiring <b>beach bum</b> and <b>yogi</b>.
-          The sea is a source of great peace and inspiration for me. I am, after all, a water sign y'all. ~
+          Outside of creative pursuits, I'm a aspiring <b>beach bum yogi</b>.
+          The sea is a source of great peace and inspiration for me. I am, after all, a water sign Y'all. ~
         </p>
         </div>
     </section>
