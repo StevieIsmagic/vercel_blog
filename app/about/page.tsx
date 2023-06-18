@@ -4,7 +4,7 @@ export default function AboutPage() {
       <h1 className="font-bold text-3xl font-serif">About Me</h1>
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
         Hey, I'm Steven. Most folks online know me as <b>Stevie IsMagic</b>.
-        It's a remnant from a time when it was unusual to share personal details with strangers on the internet.
+        It's a remnant from a time when it was unnatural to share personal details with strangers on the internet.
         (Anyone remember the original meaning of a/s/l in those AOL chatrooms?) Times sure do change. Man my back hurts..
         
         
