@@ -3,8 +3,8 @@ export default function AboutPage() {
     <section>
       <h1 className="font-bold text-3xl font-serif">About Me</h1>
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
-        Hey, I'm Steven. Most folks online know me as <b>Stevie IsMagic</b>.
-        It's a remnant from a time when it was unnatural to share personal details with strangers on the internet.
+        Most folks online know me as <b>Stevie IsMagic</b>.
+        My pen name is a remnant from a time when it was unnatural to share personal details with strangers on the internet.
         (Anyone remember the original meaning of a/s/l in those AOL chatrooms?) Times sure do change. Man my back hurts..
         
         
@@ -13,8 +13,8 @@ export default function AboutPage() {
         <p>
           I find writing to be one of the kindest forms of artistic expression. And I want write more about my journey as a human being.
           Sir Isaac Newton once said that if today we see further than others, it is because we stand on the shoulders of giants.
-          IMO, we each owe it to the world to share our knowledge and experiences. Could you imagine if Einstein never shared his theories? 
-          Or if our predecesors never shared any of their ideas for the betterment of humanity? What kind of world would we live in today?
+          IMO, we each owe it to the world to share our knowledge and experiences. Could you imagine our predecesors never shared
+          any of their ideas for the betterment of humanity? What kind of world would we live in today?
           
         </p>
         <hr />
