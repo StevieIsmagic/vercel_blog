@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     default: 'Stevie IsMagic',
     template: '%s | Stevie IsMagic',
   },
-  description: 'Thinker, writer, and lover.',
+  description: 'Thinker, writer, lover.',
   openGraph: {
     title: 'Stevie IsMagic',
-    description: 'Thinker, writer, and lover.',
+    description: 'Thinker, writer, lover.',
     url: 'https://stevieismagic.com',
     siteName: 'Stevie IsMagic',
     images: [
