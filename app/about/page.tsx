@@ -13,8 +13,8 @@ export default function AboutPage() {
           I find writing to be one of the kindest forms of artistic expression.
           And through this blog I wish to share more of the knowledge I've aquired on my human journey.
           Sir Isaac Newton once said if today we see further than others, it is because we stand on the shoulders of giants.
-          IMO, we each owe it to the world to share our knowledge and experiences. Could you imagine if our predecesors never shared
-          any of their ideas for the betterment of humanity? What kind of world would we live in today?
+          Could you imagine if our predecesors never shared any of their ideas for the betterment of humanity?
+          IMO, we each owe it to the future to contribute our unique bits of knowledge and experiences, however small they may seem.
           
         </p>
         <hr />

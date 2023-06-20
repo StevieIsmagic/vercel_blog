@@ -5,7 +5,7 @@ export const avatar = me;
 export const about = () => {
   return (
     <>
-      Welcome ~ I'm Stevie, a writer based in Miami, Florida.
+      Welcome ~ I'm Stevie, a writer based in Miami Beach, Florida.
       I blog about a variety of topics including philosophy, longevity, and living a good life.
     </>
   );
