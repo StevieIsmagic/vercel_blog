@@ -14,15 +14,15 @@ const kaisei = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Stevie IsMagic',
-    template: '%s | Stevie IsMagic',
+    default: 'Steven Ocampo',
+    template: '%s | Steven Ocampo',
   },
   description: 'Thinker, writer, lover.',
   openGraph: {
-    title: 'Stevie IsMagic',
+    title: 'Steven Ocampo',
     description: 'Thinker, writer, lover.',
     url: 'https://steven.ocampo.io',
-    siteName: 'Stevie IsMagic',
+    siteName: 'Steven Ocampo',
     images: [
       {
         url: 'https://steven.ocampo.io/og.jpg', //TODO this image is a big L on the lefthand column of the landing page
