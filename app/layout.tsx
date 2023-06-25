@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Stevie IsMagic',
     description: 'Thinker, writer, lover.',
-    url: 'https://stevieismagic.com',
+    url: 'https://steven.ocampo.io',
     siteName: 'Stevie IsMagic',
     images: [
       {
-        url: 'https://stevieismagic.com/og.jpg', //TODO this image is a big L on the lefthand column of the landing page
+        url: 'https://steven.ocampo.io/og.jpg', //TODO this image is a big L on the lefthand column of the landing page
         width: 1920,
         height: 1080,
       },

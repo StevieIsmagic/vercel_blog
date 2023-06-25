@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: '*',
       },
     ],
-    sitemap: 'https://stevieismagic.com/sitemap.xml',
-    host: 'https://stevieismagic.com',
+    sitemap: 'https://steven.ocampo.io/sitemap.xml',
+    host: 'https://steven.ocampo.io',
   };
 }
