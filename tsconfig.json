@@ -31,6 +31,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated"
-, "pages/_document.js", "lib/ga.js"  ],
+  ],
   "exclude": ["node_modules"]
 }

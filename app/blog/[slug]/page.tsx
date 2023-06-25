@@ -28,8 +28,8 @@ export async function generateMetadata({
     slug,
   } = post;
   const ogImage = image
-    ? `https://stevieismagic.com${image}`
-    : `https://stevieismagic.com/api/og?title=${title}`;
+    ? `https://steven.ocampo.io${image}`
+    : `https://steven.ocampo.io/api/og?title=${title}`;
 
   return {
     title,
@@ -39,7 +39,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `https://stevieismagic.com/blog/${slug}`,
+      url: `https://steven.ocampo.io/blog/${slug}`,
       images: [
         {
           url: ogImage,

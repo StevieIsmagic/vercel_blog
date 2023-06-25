@@ -29,9 +29,9 @@ const computedFields = {
       dateModified: doc.publishedAt,
       description: doc.summary,
       image: doc.image
-        ? `https://stevieismagic.com${doc.image}`
-        : `https://stevieismagic.com/api/og?title=${doc.title}`,
-      url: `https://stevieismagic.com/blog/${doc._raw.flattenedPath}`,
+        ? `https://steven.ocampo.io${doc.image}`
+        : `https://steven.ocampo.io/api/og?title=${doc.title}`,
+      url: `https://steven.ocampo.io/blog/${doc._raw.flattenedPath}`,
       author: {
         '@type': 'Person',
         name: 'Stevie IsMagic',

@@ -1,4 +1,4 @@
-# stevieismagic.com
+# steven.ocampo.io
 
 - check .jpg throughout project (e.g. og.jpg)
 - need og-bg.png for metadata
