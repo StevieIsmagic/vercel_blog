@@ -39,11 +39,10 @@ const ContentSecurityPolicy = `
     default-src 'self' vercel.live;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live https://www.googletagmanager.com;
     style-src 'self' 'unsafe-inline';
-    img-src * blob: data:;
+    img-src * blob: data: https://www.googletagmanager.com;
     media-src 'none';
     connect-src *;
     font-src 'self';
-    img-src www.googletagmanager.com;
 `;
 
 const securityHeaders = [
