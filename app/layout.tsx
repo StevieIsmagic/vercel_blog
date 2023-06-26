@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   //TODO - add verification keys
   verification: {
     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
+    yandex: '14d2e73487fa6c71',// TODO - add yandex verification key
   },
 };
 
@@ -83,16 +83,17 @@ export default function RootLayout({
         `}
       </Script>
       <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
-        <Sidebar />
-        <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
-          {children}
-          <Analytics />
-        </main>
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_GOOGLE_TAG_MANAGER_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
           }}
         />
+        <Sidebar />
+        <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
+          {children}
+          <Analytics />
+        </main>
+
       </body>
     </html>
   );
