@@ -34,7 +34,7 @@ const computedFields = {
       url: `https://steven.ocampo.io/blog/${doc._raw.flattenedPath}`,
       author: {
         '@type': 'Person',
-        name: 'Stevie IsMagic',
+        name: 'Steven Ocampo',
       },
     }),
   },
