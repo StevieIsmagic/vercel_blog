@@ -4,8 +4,8 @@ import { getBlogViews, getTweetCount, getStarCount } from 'lib/metrics';
 import {
   ArrowIcon,
   GitHubIcon,
-  TwitterIcon,
   ViewsIcon,
+  InstagramIcon,
 } from 'components/icons';
 import { name, about, bio, avatar } from 'lib/info';
 
@@ -45,10 +45,10 @@ export default async function HomePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/stevieismagic"
+            href="https://www.instagram.com/stevieismagic/"
             className="flex items-center gap-2"
           >
-            <TwitterIcon />
+            <InstagramIcon />
             {/* TODO - add twitter api key */}
             {/* {`${tweetCount.toLocaleString()} tweets all time`}  */}
           </a>

@@ -25,9 +25,9 @@ function Logo() {
     <Link aria-label="Stevie IsMagic" href="https://ocampo.io">
       <motion.svg
         className="text-black dark:text-white h-[90px] md:h-[90px]"
-        width="45"
-        height="60"
-        viewBox="0 0 100 100"
+        width="60"
+        height="30"
+        viewBox="0 0 30 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -47,9 +47,9 @@ function Logo() {
             type: 'spring',
             stiffness: 50,
           }}
-          d="M 50,50 A 50,50 0 0 1 50,0 A 50,50 0 0 1 50,50 z"
+          d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
           stroke="red"
-          strokeWidth={50}
+          strokeWidth={30}
           fill="white"
           strokeLinecap="round"
         />
@@ -67,9 +67,7 @@ export default function Navbar() {
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
       <div className="lg:sticky lg:top-20">
-        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ">
-          <Logo />
-        </div>
+        <Logo />
         <LayoutGroup>
           <nav
             className="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
