@@ -15,7 +15,7 @@ export const bio = () => {
     <>
       When I'm not writing, I'm probably coding or building my second brain.
       I enjoy playing guitar and exploring all kinds of musical experiences.
-      I also love quietly contemplating the new ideas I encounter through the works I daily read.
+      I also love quietly contemplating ideas, both new and old.
     </>
   );
 };

@@ -12,7 +12,7 @@ import { name, about, bio, avatar } from 'lib/info';
 export const revalidate = 60;
 
 export default async function HomePage() {
-  let starCount, views, tweetCount =  [0, 0, 0];
+  let starCount, views, tweetCount = [0, 0, 0];
 
   try {
     // TODO - add api keys
@@ -76,10 +76,10 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/stevieismagic"
+            href="https://stevieismagic.substack.com"
           >
             <ArrowIcon />
-            <p className="h-7">follow me on twitter</p>
+            <p className="h-7">join my email list</p>
           </a>
         </li>
         <li>
@@ -87,10 +87,10 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://stevieismagic.substack.com"
+            href="https://ocampo.io"
           >
             <ArrowIcon />
-            <p className="h-7">get email updates</p>
+            <p className="h-7">meet my family</p>
           </a>
         </li>
       </ul>
