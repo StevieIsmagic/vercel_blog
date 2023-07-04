@@ -22,14 +22,16 @@ const navItems = {
 
 function Logo() {
   return (
-    <Link aria-label="Stevie IsMagic" href="/">
+    <Link aria-label="Stevie IsMagic" href="https://ocampo.io">
       <motion.svg
-        className="text-black dark:text-white h-[25px] md:h-[37px]"
-        width="25"
-        height="37"
-        viewBox="0 0 232 316"
+        className="text-black dark:text-white h-[90px] md:h-[90px]"
+        width="45"
+        height="60"
+        viewBox="0 0 100 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        transform="matrix(-1,1.2246467991473532e-16,-1.2246467991473532e-16,-1,0,0)"
       >
         <motion.path
           initial={{
@@ -45,20 +47,11 @@ function Logo() {
             type: 'spring',
             stiffness: 50,
           }}
-          d="M39 316V0"
-          stroke="currentColor"
-          strokeWidth={78}
-        />
-        <motion.path
-          initial={{ x: -200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 0.5,
-            type: 'spring',
-            stiffness: 50,
-          }}
-          d="M232 314.998H129.852L232 232.887V314.998Z"
-          fill="currentColor"
+          d="M 50,50 A 50,50 0 0 1 50,0 A 50,50 0 0 1 50,50 z"
+          stroke="red"
+          strokeWidth={50}
+          fill="white"
+          strokeLinecap="round"
         />
       </motion.svg>
     </Link>
