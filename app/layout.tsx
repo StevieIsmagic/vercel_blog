@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'Steven Ocampo',
     images: [
       {
-        url: 'https://steven.ocampo.io/og.jpg', //TODO this image is a big L on the lefthand column of the landing page
+        url: 'https://steven.ocampo.io/og.jpg',
         width: 1920,
         height: 1080,
       },
@@ -50,7 +50,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   icons: {
-    //TODO - add favicon
     shortcut: '/favicon.ico',
   },
   //TODO - add verification keys
