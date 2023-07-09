@@ -1,4 +1,4 @@
-// import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 // import { queryBuilder } from 'lib/planetscale';
 // import { SignIn, SignOut } from './actions';
 // import { getServerSession } from 'next-auth/next';
