@@ -63,6 +63,7 @@ export default async function HomePage() {
           </a>
           <Link href="/blog" className="flex items-center">
             <ViewsIcon />
+            {/* TODO - fix blog views */}
             {/* {`${views.toLocaleString()} blog views all time`} */}
           </Link>
         </div>
