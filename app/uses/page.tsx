@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Uses',
   description:
-    "Here's what tech I'm currently using for coding, writing, videos, and music.",
+    "Here's the tech I'm currently using for coding, writing, videos, music, and staying young.",
 };
 
 //TODO - add url links to these products; affiliate links? 

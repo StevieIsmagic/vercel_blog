@@ -5,7 +5,7 @@ import ViewCounter from './view-counter';
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Read my thoughts on philosophy, longevity, and more.',
+  description: 'Thoughts on longevity, philosophy, and how to live the good life.',
 };
 
 export default async function BlogPage() {
@@ -27,7 +27,7 @@ export default async function BlogPage() {
           >
             <div className="w-full flex flex-col">
               <p>{post.title}</p>
-               {/* TODO */}
+              {/* TODO */}
               {/* <ViewCounter slug={post.slug} trackView={false} /> */}
             </div>
           </Link>
