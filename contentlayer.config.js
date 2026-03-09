@@ -8,7 +8,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 const computedFields = {
   slug: {
     type: 'string',
-    resolve: (doc) => doc._raw.flattenedPath,
+    resolve: (doc) => doc._raw.flattenedPath.replace(/^posts\//, ''),
   },
   tweetIds: {
     type: 'array',
@@ -31,7 +31,7 @@ const computedFields = {
       image: doc.image
         ? `https://steven.ocampo.io${doc.image}`
         : `https://steven.ocampo.io/api/og?title=${doc.title}`,
-      url: `https://steven.ocampo.io/blog/${doc._raw.flattenedPath}`,
+      url: `https://steven.ocampo.io/blog/${doc._raw.flattenedPath.replace(/^posts\//, '')}`,
       author: {
         '@type': 'Person',
         name: 'Steven Ocampo',
