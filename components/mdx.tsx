@@ -26,11 +26,65 @@ function RoundedImage(props) {
   return <Image alt={props.alt} className="rounded-lg" {...props} />;
 }
 
-function Callout(props) {
+const calloutStyles = {
+  info: {
+    border: 'border-blue-200 dark:border-blue-800',
+    bg: 'bg-blue-50 dark:bg-blue-950',
+    icon: 'ℹ️',
+  },
+  warning: {
+    border: 'border-yellow-200 dark:border-yellow-800',
+    bg: 'bg-yellow-50 dark:bg-yellow-950',
+    icon: '⚠️',
+  },
+  tip: {
+    border: 'border-green-200 dark:border-green-800',
+    bg: 'bg-green-50 dark:bg-green-950',
+    icon: '💡',
+  },
+  danger: {
+    border: 'border-red-200 dark:border-red-800',
+    bg: 'bg-red-50 dark:bg-red-950',
+    icon: '🚨',
+  },
+};
+
+function Callout({ emoji, type, children }) {
+  const style = calloutStyles[type] || calloutStyles.info;
+  const icon = emoji || style.icon;
   return (
-    <div className="flex bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 my-8">
-      <div className="flex items-center w-4 mr-4">{props.emoji}</div>
-      <div className="w-full callout">{props.children}</div>
+    <div className={`flex ${style.bg} ${style.border} border rounded-lg p-4 my-8`}>
+      <div className="flex items-center w-4 mr-4">{icon}</div>
+      <div className="w-full callout">{children}</div>
+    </div>
+  );
+}
+
+function YouTubeEmbed({ id }) {
+  return (
+    <div className="relative w-full my-8" style={{ paddingBottom: '56.25%' }}>
+      <iframe
+        className="absolute top-0 left-0 w-full h-full rounded-lg"
+        src={`https://www.youtube.com/embed/${id}`}
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
+}
+
+function CodeSandbox({ id }) {
+  return (
+    <div className="my-8">
+      <iframe
+        className="w-full rounded-lg border border-neutral-200 dark:border-neutral-800"
+        src={`https://codesandbox.io/embed/${id}?fontsize=14&theme=dark`}
+        title="CodeSandbox"
+        style={{ height: '500px' }}
+        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+      />
     </div>
   );
 }
@@ -95,6 +149,8 @@ const components = {
   Callout,
   ProsCard,
   ConsCard,
+  YouTubeEmbed,
+  CodeSandbox,
 };
 
 interface MdxProps {
