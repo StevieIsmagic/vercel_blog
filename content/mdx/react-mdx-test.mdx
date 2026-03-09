@@ -1,0 +1,35 @@
+---
+title: "MDX Test Post"
+date: "2026-03-08"
+description: "Testing MDX rendering alongside plain Markdown posts"
+tags: [meta, test]
+published: true
+---
+
+This is a **MDX** post. It renders just like Markdown but can also include React components.
+
+## Regular Markdown works fine
+
+- Lists work
+- **Bold** and _italic_ work
+- `inline code` works
+
+## Code blocks work too
+
+```javascript
+const hello = () => {
+  console.log("Hello from MDX");
+};
+```
+
+## This is what makes MDX special
+
+Unlike `.md`, this file could embed a React component inline like this:
+
+```jsx
+// Example — if you had a <Chart /> component you could do:
+// <Chart data={[1, 2, 3]} />
+```
+
+For now this post just confirms MDX files build and render
+alongside your Obsidian `.md` posts without conflict.
