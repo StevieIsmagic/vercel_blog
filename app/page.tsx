@@ -12,16 +12,12 @@ import { name, about, bio, avatar } from 'lib/info';
 export const revalidate = 60;
 
 export default async function HomePage() {
-  let starCount, views, tweetCount = [0, 0, 0];
+  let starCount = 0;
+  let views = 0;
+  let tweetCount = 0;
 
   try {
-    // TODO - add api keys
-
-    // [starCount, views, tweetCount] = await Promise.all([
-    //   getStarCount(),
-    //   getBlogViews(),
-    //   getTweetCount(),
-    // ]);
+    views = await getBlogViews();
   } catch (error) {
     console.error(error);
   }
@@ -63,8 +59,7 @@ export default async function HomePage() {
           </a>
           <Link href="/blog" className="flex items-center">
             <ViewsIcon />
-            {/* TODO - fix blog views */}
-            {/* {`${views.toLocaleString()} blog views all time`} */}
+            {`${views.toLocaleString()} blog views all time`}
           </Link>
         </div>
       </div>

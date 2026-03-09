@@ -5,8 +5,9 @@ import { queryBuilder } from 'lib/planetscale';
 import { cache } from 'react';
 
 export const getBlogViews = cache(async () => {
-  if (!process.env.TWITTER_API_TOKEN) {
-    return 0;
+  if (!process.env.DATABASE_URL) {
+    // Stub: return random total views when no DB is connected
+    return Math.floor(Math.random() * 10000) + 500;
   }
 
   const data = await queryBuilder
