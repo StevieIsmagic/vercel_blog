@@ -25,9 +25,9 @@ const computedFields = {
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
       headline: doc.title,
-      datePublished: doc.publishedAt,
-      dateModified: doc.publishedAt,
-      description: doc.summary,
+      datePublished: doc.date,
+      dateModified: doc.date,
+      description: doc.description,
       image: doc.image
         ? `https://steven.ocampo.io${doc.image}`
         : `https://steven.ocampo.io/api/og?title=${doc.title}`,
@@ -42,20 +42,31 @@ const computedFields = {
 
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
-  filePathPattern: `**/*.mdx`,
+  // Accept both .md (from Obsidian) and .mdx (for rich components)
+  filePathPattern: `**/*.{md,mdx}`,
   contentType: 'mdx',
   fields: {
     title: {
       type: 'string',
       required: true,
     },
-    publishedAt: {
+    // 'date' matches Obsidian vault frontmatter
+    date: {
       type: 'string',
       required: true,
     },
-    summary: {
+    // 'description' matches Obsidian vault frontmatter
+    description: {
       type: 'string',
       required: true,
+    },
+    tags: {
+      type: 'list',
+      of: { type: 'string' },
+    },
+    published: {
+      type: 'boolean',
+      default: true,
     },
     image: {
       type: 'string',
@@ -76,8 +87,6 @@ export default makeSource({
         {
           theme: 'one-dark-pro',
           onVisitLine(node) {
-            // Prevent lines from collapsing in `display: grid` mode, and allow empty
-            // lines to be copy/pasted
             if (node.children.length === 0) {
               node.children = [{ type: 'text', value: ' ' }];
             }
