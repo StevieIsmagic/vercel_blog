@@ -1,0 +1,141 @@
+---
+title: "MDX Component Showcase"
+date: "2026-03-08"
+description: "A reference guide for React components you can embed in MDX posts"
+tags: [meta, mdx, reference]
+published: true
+---
+
+MDX lets you embed interactive React components directly in your writing.
+This post is a living reference for components available in your blog.
+
+## How to Use Components in MDX
+
+Unlike regular Markdown, MDX lets you import and use React components inline.
+At the top of any `.mdx` file, add your imports before the content:
+
+```jsx
+import { ComponentName } from 'components/ComponentName';
+```
+
+Then use it anywhere in the post like HTML:
+
+```jsx
+<ComponentName prop="value" />
+```
+
+---
+
+## Available Components
+
+### 1. `<Callout />` — Highlighted note blocks
+
+Use for warnings, tips, or important asides.
+
+```jsx
+import { Callout } from 'components/Callout';
+
+<Callout type="info">
+  This is an informational note.
+</Callout>
+
+<Callout type="warning">
+  Watch out for this edge case.
+</Callout>
+
+<Callout type="tip">
+  Pro tip: this will save you time.
+</Callout>
+```
+
+**Props:**
+- `type` — `"info"` | `"warning"` | `"tip"` | `"danger"`
+- `children` — any content, including Markdown
+
+---
+
+### 2. `<StaticTweet />` — Embedded tweets
+
+Already in your codebase. Embeds a tweet by ID, no JavaScript tracking.
+
+```jsx
+import { StaticTweet } from 'components/StaticTweet';
+
+<StaticTweet id="1234567890" />
+```
+
+**Props:**
+- `id` — the tweet ID from the URL (twitter.com/user/status/[ID])
+
+---
+
+### 3. `<Image />` — Optimized images
+
+Use Next.js Image instead of plain Markdown images for performance.
+
+```jsx
+import Image from 'next/image';
+
+<Image
+  src="/images/my-photo.jpg"
+  alt="Description of image"
+  width={800}
+  height={400}
+/>
+```
+
+**Props:**
+- `src` — path relative to `/public`
+- `alt` — always required for accessibility
+- `width` / `height` — in pixels
+
+---
+
+### 4. `<YouTubeEmbed />` — Embedded videos
+
+```jsx
+import { YouTubeEmbed } from 'components/YouTubeEmbed';
+
+<YouTubeEmbed id="dQw4w9WgXcQ" />
+```
+
+**Props:**
+- `id` — the video ID from the YouTube URL
+
+---
+
+### 5. `<CodeSandbox />` — Live code embeds
+
+For interactive code examples readers can edit in the browser.
+
+```jsx
+import { CodeSandbox } from 'components/CodeSandbox';
+
+<CodeSandbox id="your-sandbox-id" />
+```
+
+**Props:**
+- `id` — from codesandbox.io/s/[ID]
+
+---
+
+## Writing Tips
+
+- Keep components minimal — most posts should be plain Markdown
+- Use `.mdx` only when a component genuinely adds value
+- Plain `.md` files from Obsidian render identically to `.mdx` for text content
+- Components live in `components/` in the blog repo — add new ones there
+
+---
+
+## Adding a New Component
+
+1. Create `components/MyComponent.tsx` in the blog repo
+2. Import and use it in any `.mdx` file
+3. For components you use often, consider adding them to a global MDX provider
+   so you don't need to import them every time
+
+```javascript
+// next.config.js or contentlayer.config.js MDX options
+// Add frequently used components to the global scope
+```
