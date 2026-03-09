@@ -105,7 +105,8 @@ interface MdxProps {
 export function Mdx({ code, tweets }: MdxProps) {
   const Component = useMDXComponent(code);
   const StaticTweet = ({ id }) => {
-    const tweet = tweets.find((tweet) => tweet.id === id);
+    const tweet = tweets?.find((tweet) => tweet.id === id);
+    if (!tweet) return null;
     return <Tweet {...tweet} />;
   };
 
